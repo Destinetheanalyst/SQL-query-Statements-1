@@ -18,6 +18,7 @@ The EDA involved exploring the dbo.players data to answer different questions
  -  Write a query to retrieve the email_address, country, and street_address for each player. 
  -  Write a query to display the player_id, total_playing_minutes, and installed_games for each player.
  -  Write a query to display the player_id, age_group, and total_playing_minutes for each player.
+![sql1b](https://github.com/user-attachments/assets/3f2fe195-b34b-4a96-9e67-6ee326eabf81)
 
 ##### Question 2.
 - Write a query to display for each player - the player_id, amount_spent_usd, and a new calculation representing the amount spent in euros, with exchange rate of 0.8.
@@ -38,12 +39,14 @@ The EDA involved exploring the dbo.players data to answer different questions
 ##### Question 4. 
 - Write a query to display the following string for each player:
 (Full name preferred language is preferred_language)
+![sql4b](https://github.com/user-attachments/assets/2742a812-d3d9-4b20-9a8e-185ede89f3ab)
 
 ##### Question 5.
 - Write a query to display the distinct values inside the preferred_language column
 - Write a query to display the distinct list of values inside the gender column
 - Write a query to display the distinct list of values inside the age_group column
 - Write a query to display the distinct combination of gender and age_group columns
+![sql5a](https://github.com/user-attachments/assets/220035e2-8dce-43c7-a1fb-5e03849e8802)
 
   ### Data Analysis
 Some of the queries written to answer these questions are;
@@ -72,3 +75,9 @@ select player_id, concat(first_name,'  ',last_name) as full_name from dbo.player
 select distinct gender from dbo.players;
 ```
 
+### Results/Findings
+
+1. There are 2 distinct gender ; Male and Female
+2.  There are 1000 unique players
+3.  There are 5 unique age groups
+4.  There are 12 unique preferred languages

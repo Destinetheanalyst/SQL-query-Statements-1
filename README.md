@@ -4,14 +4,14 @@
 To showcase different sql functions and their various meanings
 
 ### Data Source
-The data was gotten from POSHEM TECHNOLOGIES 
+The data "dbo.players" was gotten from POSHEM TECHNOLOGIES 
 
 ### Tool
 The tool used for this project is Microsoft Server Query Language (MSSQL)
 
 ### Exploratory Data Analysis
 
-The EDA involved exploring the data to answer different questions
+The EDA involved exploring the dbo.players data to answer different questions
  ##### Question 1. 
  -  Write a query to display all the information inside players.
  -  Write a query to retrieve the last_name, first_name and city for each player.
@@ -45,4 +45,30 @@ The EDA involved exploring the data to answer different questions
 - Write a query to display the distinct list of values inside the age_group column
 - Write a query to display the distinct combination of gender and age_group columns
 
+  ### Data Analysis
+Some of the queries written to answer these questions are;
+
+  ```MSSQL
+  select * from dbo.players;
+  ```
+
+  ```MSSQL
+  select last_name, first_name, city from dbo.players;
+```
+
+```MSSQL
+select player_id, age_group, total_playing_minutes from dbo.players;
+```
+
+```MSSQL
+select player_id, last_name, first_name, amount_spent_usd, installed_games, (amount_spent_usd / installed_games) as average_amount_spent from dbo.players;
+```
+
+```MSSQL
+select player_id, concat(first_name,'  ',last_name) as full_name from dbo.players;
+```
+
+```MSSQL
+select distinct gender from dbo.players;
+```
 
